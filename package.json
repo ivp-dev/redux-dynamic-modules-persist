@@ -1,6 +1,6 @@
 {
   "name": "redux-dynamic-modules-persist",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Extension for redux-dynamic-modules to persist state to local storage",
   "keywords": [
     "react",
