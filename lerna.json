@@ -1,12 +1,12 @@
 {
-    "packages": [
-        "packages/*"
-    ],
-    "hoist": true,
-    "version": "1.0.0",
-    "command": {
-        "publish": {
-            "allowBranch": "master"
-        }
+  "packages": [
+    "packages/*"
+  ],
+  "hoist": true,
+  "version": "1.0.0",
+  "command": {
+    "publish": {
+      "allowBranch": "master"
     }
+  }
 }

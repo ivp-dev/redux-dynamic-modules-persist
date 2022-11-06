@@ -12,7 +12,10 @@
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:prod": "lerna run build:prod",
+    "build:dev": "lerna run build:dev",
+    "publish": "lerna publish",
+    "publish:force": "lerna publish --force-publish=*"
   },
   "author": "Vadim Ilinchik",
   "license": "ISC",

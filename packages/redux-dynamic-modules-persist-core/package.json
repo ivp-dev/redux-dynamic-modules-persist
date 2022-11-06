@@ -2,18 +2,23 @@
   "name": "redux-dymamic-modules-persist-core",
   "version": "1.0.0",
   "description": "Extension for redux-dynamic-modules to persist state to local storage",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:prod": "tsc && webpack --mode=production --progress",
+    "build:dev": "tsc && webpack --mode=development --progress",
+    "prepublish": "npm run build:prod"
   },
   "peerDependencies": {
     "redux-dynamic-modules-core": ">=0.0.7",
     "redux-persist": "^6.0.0"
   },
-  "author": "",
+  "author": "Vadim Ilinchik",
   "license": "ISC",
   "devDependencies": {
     "redux-dynamic-modules-core": "^5.2.3",
-    "redux-persist": "^6.0.0"
+    "redux-persist": "^6.0.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
   }
 }
