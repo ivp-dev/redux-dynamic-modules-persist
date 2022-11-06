@@ -21,7 +21,8 @@ const getModule = (persistor: Persistor) => ({
       type: "counter/plus",
     },
   ],
-  persistor: persistor,
+
+  persistor,
 });
 
 export default function CounterModule() {
