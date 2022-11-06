@@ -3,22 +3,21 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
-import { createStore } from "redux-dynamic-modules";
-import { ReduxGate } from "redux-dynamic-modules-persist-react";
-import { persistStore } from "redux-persist";
+import ReduxGateConext from "redux-dynamic-modules-persist-react/dist/PersistContext";
+import { store, persistor } from "./store";
+
 import "./index.css";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 
-const store = createStore({});
-const persistor = persistStore(store);
-
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <ReduxGateConext.Provider value={persistor}>
+        <App />
+      </ReduxGateConext.Provider>
     </Provider>
   </React.StrictMode>
 );

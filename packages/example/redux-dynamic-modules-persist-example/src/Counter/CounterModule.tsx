@@ -21,15 +21,15 @@ const getModule = (persistor: Persistor) => ({
       type: "counter/plus",
     },
   ],
-  //persistor: persistor,
+  persistor: persistor,
 });
 
 export default function CounterModule() {
   const persistor = usePersistContext();
   return (
     //@ts-ignore
-    <DynamicModuleLoader modules={[getModule()]}>
-      Hello
+    <DynamicModuleLoader modules={[getModule(persistor)]}>
+      <Counter />
     </DynamicModuleLoader>
   );
 }
