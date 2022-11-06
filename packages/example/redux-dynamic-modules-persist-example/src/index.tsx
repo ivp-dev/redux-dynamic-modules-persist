@@ -3,9 +3,9 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
-//import {  } from "redux-dynamic-modules-persist-react";
 import { createStore } from "redux-dynamic-modules";
-
+import { ReduxGate } from "redux-dynamic-modules-persist-react";
+import { persistStore } from "redux-persist";
 import "./index.css";
 
 const root = ReactDOM.createRoot(
@@ -13,6 +13,7 @@ const root = ReactDOM.createRoot(
 );
 
 const store = createStore({});
+const persistor = persistStore(store);
 
 root.render(
   <React.StrictMode>
