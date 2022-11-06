@@ -20,5 +20,9 @@
   "devDependencies": {
     "lerna": "^6.0.1",
     "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "redux-dynamic-modules-persist-core": "^0.0.3",
+    "redux-dynamic-modules-persist-react": "^0.0.3"
   }
 }

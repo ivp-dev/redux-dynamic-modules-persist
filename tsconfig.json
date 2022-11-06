@@ -7,7 +7,6 @@
     ],
     "module": "commonjs",
     "moduleResolution": "node",
-    "outDir": "./lib",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
