@@ -2,7 +2,8 @@
   "name": "redux-dynamic-modules-persist-react",
   "version": "0.0.2",
   "description": "",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
     "build:prod": "tsc && webpack --mode=production --progress",
     "build:dev": "tsc && webpack --mode=development --progress",
@@ -21,7 +22,7 @@
     "webpack-cli": "^4.10.0"
   },
   "peerDependencies": {
-    "react": "^16.8.0",
+    "react": ">=16.8.0",
     "redux-dynamic-modules-core": "^5.2.3",
     "redux-persist": "^6.0.0"
   }
