@@ -1,6 +1,6 @@
 {
   "name": "redux-dynamic-modules-persist-core",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Extension for redux-dynamic-modules to persist state to local storage",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
